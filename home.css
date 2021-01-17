@@ -76,7 +76,6 @@
     }
     .hi {
         font-size: 12vw;
-        margin-top: 30px;
     }
 
     .title {
@@ -97,6 +96,6 @@
     }
 
     .nav {
-        margin-bottom: 40px;
+        margin-bottom: 100px;
     }
 }
