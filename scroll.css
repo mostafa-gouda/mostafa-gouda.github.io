@@ -1,0 +1,27 @@
+:root{
+  --main-grad-blue:  rgba(0,210,218,1);
+  --main-grad-light-blue:  rgba(0, 211, 218, 0.925);
+  --main-grad-purple:  rgba(162,0,159,1);
+  --main-grad-light-purple:  rgba(162, 0, 159, 0.7);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #242424;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border: 8px solid  rgb(95, 95, 95);
+    background: linear-gradient(0, var(--main-grad-blue) 0%, var(--main-grad-purple) 100%);
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(80, 80, 80);
+  }
