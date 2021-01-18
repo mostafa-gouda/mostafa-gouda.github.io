@@ -12,7 +12,7 @@
     height: 100vh;
 }
 .text_wrapper{
-    animation: slide-right 1s normal;
+    animation: slide-right 1.5s normal;
 }
 
 @keyframes slide-right {
@@ -57,7 +57,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: slide-left 1s normal;
+    animation: slide-left 1.5s normal;
 }
 @keyframes slide-left {
     from {
@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 600px) {
     .slide{
-        padding: 10vw;
+        padding: 0px 8vw;
     }
     .hi {
         font-size: 12vw;
@@ -84,11 +84,12 @@
 
     .home {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .text_wrapper {
-        margin-top: 20px;
+        /* margin-top: 3; */
     }
 
     .nav div {
@@ -96,6 +97,6 @@
     }
 
     .nav {
-        margin-bottom: 100px;
+        /* margin-bottom: 30vh; */
     }
 }
