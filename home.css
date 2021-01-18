@@ -38,7 +38,7 @@
 }
 
 .nav div {
-    margin: 30px 0px;
+    margin: 15px 0px;
     font-weight: bold;
     transition: transform .2s linear;
     font-size: 3vw;
@@ -86,17 +86,10 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-    }
-
-    .text_wrapper {
-        /* margin-top: 3; */
+        height: var(--mobile-vh);
     }
 
     .nav div {
-        font-size: 9vw;
-    }
-
-    .nav {
-        /* margin-bottom: 30vh; */
+        font-size: 8vw;
     }
 }

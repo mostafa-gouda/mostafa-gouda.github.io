@@ -16,6 +16,7 @@
             padding: 0;
             margin: 0;
             font-family: 'Merriweather', serif;
+            font-weight: 400;
         }
 
         a {
@@ -28,6 +29,7 @@
             --main-grad-light-blue: rgb(0, 225, 255);
             --main-grad-purple: rgb(162, 0, 159);
             --main-grad-light-purple: rgba(162, 0, 159, 0.7);
+            --mobile-vh: 100vh;
         }
 
         /*Global classes*/
@@ -99,14 +101,17 @@
                 <div class="title">Front-End<br> Web Developer</div>
             </div>
             <div class="nav">
-                <a href="#projects">
-                    <div class="grad-text"><i class="far fa-lightbulb">&nbsp;</i>&lt;Projects&gt;</div>
-                </a>
                 <a href="#About">
                     <div class="grad-text"><i class="far fa-address-card"></i>&nbsp;</i>&lt;About me&gt;</div>
                 </a>
+                <a href="#Skills">
+                    <div class="grad-text"><i class="fas fa-laptop-code"></i></i>&nbsp;</i>&lt;...Skills...&gt;</div>
+                </a>
+                <a href="#projects">
+                    <div class="grad-text"><i class="far fa-lightbulb">&nbsp;</i>&lt;.Projects.&gt;</div>
+                </a>
                 <a href="#contact">
-                    <div class="grad-text"><i class="fas fa-at"></i>&nbsp;&lt;Contact&gt;</div>
+                    <div class="grad-text"><i class="fas fa-at"></i>&nbsp;&lt;.Contact.&gt;</div>
                 </a>
             </div>
         </div>
@@ -132,5 +137,14 @@
         </div>
     </div>
 </body>
-
+<script>
+var new_vh = window.innerHeight;
+var root = document.querySelector(':root');
+var rootStyles = getComputedStyle(root);
+var deg= rootStyles.getPropertyValue('--mobile-vh');
+console.log(deg)
+root.style.setProperty('--mobile-vh', new_vh+"px");
+deg= rootStyles.getPropertyValue('--mobile-vh');
+console.log(deg)
+</script>
 </html>
