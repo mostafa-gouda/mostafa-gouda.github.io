@@ -1,7 +1,5 @@
 .slide {
-    /* position: relative; */
     padding: 0px 15vw;
-    /* height: 100vh; */
     overflow: hidden;
 }
 
@@ -11,9 +9,7 @@
     justify-content: space-between;
     height: 100vh;
 }
-.home *{
-    font-weight: bold;
-}
+
 .text_wrapper{
     animation: slide-right 1.5s normal;
 }
@@ -26,10 +22,11 @@
     to {
       margin-left: 0vw;
     }
-  }
+}
+
 .hi {
     width: fit-content;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 600;
 
 }
@@ -48,21 +45,6 @@
     animation: slide-left 1.5s normal;
 }
 
-.nav div {
-    margin: 15px 0px;
-    font-weight: bold;
-    transition: transform .2s linear;
-    font-size: 3vw;
-}
-
-.nav div:hover {
-    transform: scale(1.1);
-}
-
-.nav div i {
-    color: white;
-}
-
 @keyframes slide-left {
     from {
       margin-right: -200vw;
@@ -71,6 +53,42 @@
     to {
       margin-right: 0vw;
     }
+}
+
+.nav div {
+    /* margin: 15px 0px; */
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.nav a:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px grey;
+}
+
+.nav a{
+    background-color: rgb(46, 46, 46);
+    transition: transform .2s linear;
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0px;
+}
+.nav a div{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.nav div i {
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    grid-column: 1/ span 2;
+}
+.nav div span {
+    font-weight: bold;
+    text-align: center;
+    grid-column: 3/ span 4;
 }
 
 
