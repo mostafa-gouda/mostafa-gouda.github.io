@@ -77,18 +77,18 @@
 }
 .nav a div{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto 1fr;
 }
 .nav div i {
     color: white;
     text-align: center;
     margin-top: 5px;
-    grid-column: 1/ span 2;
+    grid-column: 1;
 }
 .nav div span {
     font-weight: bold;
     text-align: center;
-    grid-column: 3/ span 4;
+    grid-column: 2;
 }
 
 
