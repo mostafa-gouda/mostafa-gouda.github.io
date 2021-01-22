@@ -16,9 +16,7 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    border: 8px solid  rgb(95, 95, 95);
-    background: linear-gradient(0, var(--main-grad-blue) 0%, var(--main-grad-purple) 100%);
-    border-radius: 5px;
+    background:  rgb(56, 56, 56);
   }
   
   /* Handle on hover */

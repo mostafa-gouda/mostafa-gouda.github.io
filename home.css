@@ -14,16 +14,6 @@
     animation: slide-right 1.5s normal;
 }
 
-@keyframes slide-right {
-    from {
-      margin-left: -200vw;
-    }
-  
-    to {
-      margin-left: 0vw;
-    }
-}
-
 .hi {
     width: fit-content;
     font-size: 5vw;
@@ -45,15 +35,6 @@
     animation: slide-left 1.5s normal;
 }
 
-@keyframes slide-left {
-    from {
-      margin-right: -200vw;
-    }
-  
-    to {
-      margin-right: 0vw;
-    }
-}
 
 .nav a:hover {
     transform: scale(1.1);

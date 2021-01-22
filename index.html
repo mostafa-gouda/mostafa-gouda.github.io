@@ -10,6 +10,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="projects.css">
     <script src="https://kit.fontawesome.com/cc5d1014e3.js" crossorigin="anonymous"></script>
     <title>Mostafa Gouda</title>
     <style>
@@ -52,41 +53,6 @@
             -webkit-background-clip: text;
         }
 
-        .circle {
-            position: absolute;
-            border-radius: 50%;
-            height: 350px;
-            width: 350px;
-            overflow: hidden;
-        }
-
-        #projects {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        #projects .project {
-            width: 45%;
-            background: red;
-            margin: 40px 0px;
-            box-shadow: 7px 7px 10px rgb(126, 126, 126);
-            /* transition: all 0.2s linear; */
-        }
-
-        #projects .project:hover {
-            transform: perspective(1000px) rotateY(10deg);
-        }
-
-        .project img {
-            height: 20vw;
-            width: 100%;
-        }
-
-        .project .description {
-            font-size: 2vh;
-        }
-
         @media screen and (max-width: 600px) {
             #projects .project {
                 width: 100%;
@@ -107,11 +73,11 @@
 <body>
     <div class="main">
         <div class="home slide">
-            <div class="text_wrapper">
+            <div data-aos="fade-right" data-aos-duration="1500" class="text_wrapper">
                 <div class="hi grad-text">Hi!<br> I'm Mostafa</div>
                 <div class="title">Front-End<br> Web Developer</div>
             </div>
-            <div class="nav">
+            <div data-aos="fade-left" data-aos-duration="1500" class="nav">
                 <a href="#About">
                     <div class="section">
                         <span class="icon">
@@ -141,21 +107,21 @@
             </div>
         </div>
         <div class="slide" id="projects">
-            <div data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="300" class="project">
+            <div data-aos="zoom-in-up" data-aos-duration="600" class="project">
                 <img src="https://via.placeholder.com/500x300" alt="">
                 <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis
                     earum quia qui assumenda ab magni deleniti enim doloribus quisquam, iusto eligendi voluptatibus?
                     Dignissimos reprehenderit consectetur dolore, at est inventore!</div>
                 <button>Source code</button><button>Live</button>
             </div>
-            <div data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="300" class="project">
+            <div data-aos="zoom-in-up" data-aos-duration="600" class="project">
                 <img src="https://via.placeholder.com/500x300" alt="">
                 <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis
                     earum quia qui assumenda ab magni deleniti enim doloribus quisquam, iusto eligendi voluptatibus?
                     Dignissimos reprehenderit consectetur dolore, at est inventore!</div>
                 <button>Source code</button><button>Live</button>
             </div>
-            <div data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="300" class="project">
+            <div data-aos="zoom-in-up" data-aos-duration="600" class="project">
                 <img src="https://via.placeholder.com/500x300" alt="">
                 <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis
                     earum quia qui assumenda ab magni deleniti enim doloribus quisquam, iusto eligendi voluptatibus?
