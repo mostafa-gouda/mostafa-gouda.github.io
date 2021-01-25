@@ -28,7 +28,7 @@
         }
 
         body {
-            background: rgb(36, 36, 36);
+            background: rgb(23, 34, 54);
         }
 
         a {
@@ -39,13 +39,14 @@
         :root {
             --main-grad-blue: rgb(0, 212, 219);
             --main-grad-light-blue: rgb(0, 225, 255);
-            --main-grad-purple: rgb(162, 0, 159);
+            --main-grad-purple: rgb(221, 43, 218);
             --main-grad-light-purple: rgba(162, 0, 159, 0.7);
             --mobile-vh: 100vh;
         }
 
         /*Global classes*/
         .grad-text {
+            font-weight: bold;
             color: transparent;
             background: rgb(0, 210, 218);
             background: linear-gradient(90deg, var(--main-grad-blue) 0%, var(--main-grad-purple) 100%);
@@ -56,7 +57,6 @@
         @media screen and (max-width: 600px) {
             #projects .project {
                 width: 100%;
-                /* height: 40vw;https://via.placeholder.com/150 */
             }
 
             .project img {
@@ -74,34 +74,34 @@
     <div class="main">
         <div class="home slide">
             <div data-aos="fade-right" data-aos-duration="1500" class="text_wrapper">
-                <div class="hi grad-text">Hi!<br> I'm Mostafa</div>
+                <div class="hi">Hi!<br> I'm <span class="grad-text">Mostafa</span></div>
                 <div class="title">Front-End<br> Web Developer</div>
             </div>
             <div data-aos="fade-left" data-aos-duration="1500" class="nav">
                 <a href="#About">
                     <div class="section">
-                        <span class="icon">
+                        <span class="text">About me</span>
+                        <span class="icon grad-text">
                             <i class="far fa-address-card"></i>
                         </span>
-                        <span class="grad-text text">About me</span>
                     </div>
                 </a>
                 <a href="#Skills">
                     <div class="section">
-                        <span class="icon"><i class="fas fa-laptop-code"></i></span>
-                        <span class="grad-text text">Skills</span>
+                        <span class="text">Skills</span>
+                        <span class="icon grad-text"><i class="fas fa-laptop-code"></i></span>
                     </div>
                 </a>
                 <a href="#projects">
                     <div class="section">
-                        <span class="icon"><i class="far fa-lightbulb"></i></span>
-                        <span class="grad-text text">Projects</span>
+                        <span class="text">Projects</span>
+                        <span class="icon grad-text"><i class="far fa-lightbulb"></i></span>
                     </div>
                 </a>
                 <a href="#contact">
                     <div class="section">
-                        <span class="icon"><i class="fas fa-at"></i></span>
-                        <span class="grad-text text">Contact</span>
+                        <span class="text">Contact</span>
+                        <span class="icon grad-text"><i class="fas fa-at"></i></span>
                     </div>
                 </a>
             </div>
