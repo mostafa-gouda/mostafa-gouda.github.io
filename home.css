@@ -12,10 +12,6 @@
     background-size: cover;
 }
 
-.text_wrapper{
-    animation: slide-right 1.5s normal;
-}
-
 .hi {
     width: fit-content;
     font-size: 5vw;
@@ -34,7 +30,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    animation: slide-left 1.5s normal;
 }
 
 
