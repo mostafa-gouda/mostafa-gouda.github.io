@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+html {
+    background: rgb(0, 210, 218);
+    background: linear-gradient(90deg, var(--main-grad-blue) 0%, var(--main-grad-purple) 100%);
+    padding: 0.25vw;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(23, 34, 54);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-grad-blue);
+}
+
+:root {
+    --main-grad-blue: rgb(0, 212, 219);
+    --main-grad-light-blue: rgb(0, 225, 255);
+    --main-grad-purple: rgb(221, 43, 218);
+    --main-grad-light-purple: rgba(162, 0, 159, 0.7);
+    --mobile-vh: 100vh;
+}
+
+/*Global classes*/
+.grad-text {
+    font-weight: 900;
+    color: transparent;
+    background: rgb(0, 210, 218);
+    background: linear-gradient(90deg, var(--main-grad-blue) 0%, var(--main-grad-purple) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        padding: 1.2vw;
+    }
+}

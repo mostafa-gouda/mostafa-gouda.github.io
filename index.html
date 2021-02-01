@@ -6,79 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link rel="stylesheet" href="scroll.css">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="assets/fontello-101759a5/css/fontello.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
     <title>Mostafa Gouda</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: 'Merriweather', serif;
-            font-weight: bold;
-        }
-
-        html {
-            background: rgb(0, 210, 218);
-            background: linear-gradient(90deg, var(--main-grad-blue) 0%, var(--main-grad-purple) 100%);
-            padding: 0.25vw;
-        }
-
-        body {
-            background: rgb(23, 34, 54);
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--main-grad-blue);
-        }
-
-        :root {
-            --main-grad-blue: rgb(0, 212, 219);
-            --main-grad-light-blue: rgb(0, 225, 255);
-            --main-grad-purple: rgb(221, 43, 218);
-            --main-grad-light-purple: rgba(162, 0, 159, 0.7);
-            --mobile-vh: 100vh;
-        }
-
-        /*Global classes*/
-        .grad-text {
-            font-weight: 900;
-            color: transparent;
-            background: rgb(0, 210, 218);
-            background: linear-gradient(90deg, var(--main-grad-blue) 0%, var(--main-grad-purple) 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-        }
-
-        @media screen and (max-width: 600px) {
-            #projects .project {
-                width: 100%;
-            }
-
-            .project img {
-                height: 40vw;
-            }
-
-            html {
-                padding: 1.2vw;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <div class="main">
-        <div class="home slide">
+        <div class="home section">
             <div data-aos="fade-right" data-aos-duration="1500" class="text_wrapper">
                 <div class="hi">Hi!<br> I'm <span class="grad-text">Mostafa</span></div>
                 <div class="title">Front-End<br> Web Developer</div>
             </div>
             <div data-aos="fade-left" data-aos-duration="1500" class="nav">
                 <a href="#About">
-                    <div class="section">
+                    <div class="wrapper">
                         <span class="text">About me</span>
                         <span class="icon grad-text">
                             <i class="icon-about"></i>
@@ -86,7 +32,7 @@
                     </div>
                 </a>
                 <a href="#Skills">
-                    <div class="section">
+                    <div class="wrapper">
                         <span class="text">Skills</span>
                         <span class="icon grad-text">
                             <i class="icon-skills"></i>
@@ -94,7 +40,7 @@
                     </div>
                 </a>
                 <a href="#projects">
-                    <div class="section">
+                    <div class="wrapper">
                         <span class="text">Projects</span>
                         <span class="icon grad-text">
                             <i class="icon-projects"></i>
@@ -102,7 +48,7 @@
                     </div>
                 </a>
                 <a href="#contact">
-                    <div class="section">
+                    <div class="wrapper">
                         <span class="text">Contact</span>
                         <span class="icon grad-text">
                             <i class="icon-contact"></i>
@@ -111,30 +57,69 @@
                 </a>
             </div>
         </div>
-        <div class="slide" id="projects">
-            <div data-aos="zoom-in-up" data-aos-duration="600" class="project">
-                <img src="https://via.placeholder.com/500x300" alt="">
-                <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis
-                    earum quia qui assumenda ab magni deleniti enim doloribus quisquam, iusto eligendi voluptatibus?
-                    Dignissimos reprehenderit consectetur dolore, at est inventore!</div>
-                <button>Source code</button><button>Live</button>
-            </div>
-            <div data-aos="zoom-in-up" data-aos-duration="600" class="project">
-                <img src="https://via.placeholder.com/500x300" alt="">
-                <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis
-                    earum quia qui assumenda ab magni deleniti enim doloribus quisquam, iusto eligendi voluptatibus?
-                    Dignissimos reprehenderit consectetur dolore, at est inventore!</div>
-                <button>Source code</button><button>Live</button>
-            </div>
-            <div data-aos="zoom-in-up" data-aos-duration="600" class="project">
-                <img src="https://via.placeholder.com/500x300" alt="">
-                <div class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis
-                    earum quia qui assumenda ab magni deleniti enim doloribus quisquam, iusto eligendi voluptatibus?
-                    Dignissimos reprehenderit consectetur dolore, at est inventore!</div>
-                <button>Source code</button><button>Live</button>
+        <div class="section projects" id="projects">
+            <div class="slider">
+
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+                <a href="#slide-4">4</a>
+                <a href="#slide-5">5</a>
+
+                <div class="slides">
+                    <div class="slide" id="slide-1">
+                        <div class="project_pic">
+                            <div class="description">
+                                <div class="description-text">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slide" id="slide-2">
+                        <div class="project_pic">
+                            <div class="description">
+                                <div class="description-text">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <div class="project_pic">
+                            <div class="description">
+                                <div class="description-text">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slide" id="slide-4">
+                        <div class="project_pic">
+                            <div class="description">
+                                <div class="description-text">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slide" id="slide-5">
+                        <div class="project_pic">
+                            <div class="description">
+                                <div class="description-text">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="contact slide">
+        <div class="contact section">
 
         </div>
     </div>
